@@ -4,8 +4,8 @@ $mainColor: rgba(109, 152, 134, 1)
 $secondryColor: #D9CAB3
 
 *
-    box-sizing: border-box
-    outline: none
+    box-sizing: border-box !important
+    outline: none !important
     margin: 0 !important
     padding: 0 !important
 
@@ -100,6 +100,11 @@ div.gf-con
             &:hover
                 filter: brightness(80%)
 
+@media (min-width: 576px) and (max-width: 992px)
+    div.gf-con
+        div
+            top: 100px
+
 div.imgs
     position: relative
     width: 100%
@@ -111,3 +116,8 @@ div.imgs
         height: 200px
         top: 300px
         display: none
+
+@media (min-width: 576px) and (max-width: 992px)
+    div.imgs
+        img
+            top: 150px

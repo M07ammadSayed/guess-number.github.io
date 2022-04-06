@@ -12,7 +12,7 @@ document.querySelector("div.hs div").addEventListener("dblclick", function () {
 });
 
 let sec = 119,
-    countDiv = document.querySelector("div.tc div p"),
+    countDiv = document.querySelector("div.tc div span"),
     secondPass;
 
 document.getElementById("startGame").onclick = function () {
