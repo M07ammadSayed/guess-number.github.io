@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Guess-game</title>
+        <meta name="author" content="Mohammad" />
+        <meta name="description" content="Guess game" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="shortcut icon" href="imgs/trophy.svg" type="image/x-icon" />
+    </head>
+
+    <body>
+        <!-- Splash (start) -->
+        <div id="splash" class="splash">
+            <button class="start-button" id="start-game" name="Start game">
+                Start game
+            </button>
+        </div>
+        <!-- Splash (end) -->
+
+        <section class="details-con">
+            <div class="row">
+                <!-- Name (start) -->
+                <div class="nc col-6 col-sm-6 col-md-4">
+                    <p>Name:</p>
+                    <span id="name"></span>
+                </div>
+                <!-- Name (end) -->
+
+                <!-- High score (start) -->
+                <div class="hs col-6 col-sm-6 col-md-4">
+                    <p>High score:</p>
+                    <span>0</span>
+                </div>
+                <!-- High score (end) -->
+
+                <!-- Score (start) -->
+                <div class="sc col-6 col-sm-6 col-md-4">
+                    <p>Score:</p>
+                    <span id="score">0</span>
+                </div>
+                <!-- Score (end) -->
+
+                <!-- Timer (start) -->
+                <div class="tc col-6 col-sm-6 col-md-12">
+                    <div>Timer</div>
+                </div>
+                <!-- Timer (end) -->
+            </div>
+        </section>
+
+        <!-- Guess field (start) -->
+        <div class="gf">
+            <div>
+                <input
+                    id="guess-field"
+                    type="number"
+                    name="Guess field"
+                    placeholder="Type a no."
+                    maxlength="2"
+                    min="1"
+                    max="10"
+                />
+                <button id="guess-button" name="Guess">Guess</button>
+            </div>
+        </div>
+        <!-- Guess field (end) -->
+
+        <!-- Images (start) -->
+        <div class="imgs">
+            <img id="true" src="imgs/iconfinder_Tick_Mark_1398911.svg" />
+            <img id="false" src="imgs/error-svgrepo-com.svg" />
+        </div>
+        <!-- Images (start) -->
+
+        <!-- Sound (start) -->
+        <audio id="audio1">
+            <source src="audio/correct sound effect.mp3" />
+        </audio>
+        <audio id="audio2">
+            <source src="audio/Wrong Buzzer - Sound Effect.mp3" />
+        </audio>
+        <!-- Sound (end) -->
+
+        <script type="text/javascript" src="script.js"></script>
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/wow.min.js"></script>
+    </body>
+</html>
