@@ -1,22 +1,22 @@
 window.onload = function () {
     localStorage.getItem("High-score");
-    document.querySelector("section.high-score div span").innerHTML = localStorage.getItem("High-score");
+    document.querySelector("div.hs div span").innerHTML = localStorage.getItem("High-score");
     if (localStorage.getItem("High-score") === null) {
-        document.querySelector("section.high-score div span").innerHTML = "0";
+        document.querySelector("div.hs div span").innerHTML = "0";
     }
 };
 
-document.querySelector(".high-score div").addEventListener("dblclick", function () {
+document.querySelector("div.hs div").addEventListener("dblclick", function () {
     localStorage.removeItem("High-score");
-    document.querySelector("section.high-score div span").innerHTML = "0";
+    document.querySelector("div.hs div span").innerHTML = "0";
 });
 
 let sec = 119,
-    countDiv = document.querySelector("div.tc div"),
+    countDiv = document.querySelector("div.tc div p"),
     secondPass;
 
-document.getElementById("start-game").onclick = function () {
-    document.getElementById("splash").style.display = "none";
+document.getElementById("startGame").onclick = function () {
+    document.querySelector("div.splash-con").style.display = "none";
 
     let = countDown = setInterval(function () {
         "use strict";
@@ -62,7 +62,6 @@ document.getElementById("start-game").onclick = function () {
     }
 
     alert('Notice: "Input must contain numbers > 0 & <= 10"');
-    document.querySelector("div.tc div").style.padding = "10px";
     setInterval(function () {
         if (Number(document.getElementById("score").innerHTML) > Number(document.querySelector("div.hs div span").innerHTML)) {
             alert("Awesome!, High score");
@@ -87,14 +86,9 @@ document.getElementById("start-game").onclick = function () {
         if (con3 === true) {
             location.reload();
         } else {
-            document.getElementById("ques").style.opacity = "0";
+            document.getElementById("guess-button").style.pointerEvents = "none";
 
-            document.getElementById("guess-button").style.pointerEvents =
-                "none";
-
-            document
-                .getElementById("guess-field")
-                .setAttribute("disabled", "disabled");
+            document.getElementById("guess-field").setAttribute("disabled", "disabled");
         }
     }, 119000);
 };

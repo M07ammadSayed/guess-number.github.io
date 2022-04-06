@@ -20,10 +20,8 @@
 
     <body>
         <!-- Splash (start) -->
-        <div id="splash" class="splash">
-            <button class="start-button" id="start-game" name="Start game">
-                Start game
-            </button>
+        <div id=splash class="splash-con">
+            <button id=startGame name="Start game">Start game</button>
         </div>
         <!-- Splash (end) -->
 
@@ -59,7 +57,7 @@
                 <!-- Timer (start) -->
                 <div class="tc col-12 col-sm-12 col-md-12">
                     <div>
-                        <span>Timer</span>
+                        <span></span>
                     </div>
                 </div>
                 <!-- Timer (end) -->
@@ -67,17 +65,9 @@
         </section>
 
         <!-- Guess field (start) -->
-        <div class="gf">
+        <div class="gf-con">
             <div>
-                <input
-                    id="guess-field"
-                    type="number"
-                    name="Guess field"
-                    placeholder="Type a no."
-                    maxlength="2"
-                    min="1"
-                    max="10"
-                />
+                <input id="guess-field" type="number" name="Guessfield" placeholder="Guess number" maxlength="2" min="1" max="10" />
                 <button id="guess-button" name="Guess">Guess</button>
             </div>
         </div>
