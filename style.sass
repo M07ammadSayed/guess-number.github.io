@@ -6,8 +6,8 @@ $secondryColor: #D9CAB3
 *
     box-sizing: border-box
     outline: none
-    margin: 0
-    padding: 0
+    margin: 0 !important
+    padding: 0 !important
 
 body
     background-color: $backgroundColor !important
@@ -39,40 +39,26 @@ section.details-con
     width: 100%
     height: fit-content
     overflow: hidden
-    div
+    margin-block-start: 20px !important
+    div.row
+        position: relative
         div
             position: relative
             display: flex
             justify-content: center
             align-items: center
-            margin: 0
-            padding: 0
-            background-color: $mainColor
-        div.hs
-            p
-                margin: 0
-                padding: 0
-            span
-                margin: 0
-                padding: 0
-        div.nc
-            p
-                margin: 0
-                padding: 0
-            span
-                margin: 0
-                padding: 0
-        div.tc
+            margin-block-end: 20px !important
             div
-                margin: 0
-                padding: 0
-        div.sc
-            p
-                margin: 0
-                padding: 0
-            span
-                margin: 0
-                padding: 0
+                position: relative
+                width: fit-content
+                height: fit-content
+                background-color: $mainColor
+                padding: 10px !important
+                border: 0
+                border-radius: 7px
+                p
+                    display: inline-block
+                    padding-inline-end: 5px !important
 
 div.gf
     position: relative

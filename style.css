@@ -2,8 +2,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 body {
@@ -48,9 +48,15 @@ section.details-con {
   height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
+  -webkit-margin-before: 20px !important;
+          margin-block-start: 20px !important;
 }
 
-section.details-con div div {
+section.details-con div.row {
+  position: relative;
+}
+
+section.details-con div.row div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,44 +67,28 @@ section.details-con div div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  padding: 0;
+  -webkit-margin-after: 20px !important;
+          margin-block-end: 20px !important;
+}
+
+section.details-con div.row div div {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #6d9886;
+  padding: 10px !important;
+  border: 0;
+  border-radius: 7px;
 }
 
-section.details-con div div.hs p {
-  margin: 0;
-  padding: 0;
-}
-
-section.details-con div div.hs span {
-  margin: 0;
-  padding: 0;
-}
-
-section.details-con div div.nc p {
-  margin: 0;
-  padding: 0;
-}
-
-section.details-con div div.nc span {
-  margin: 0;
-  padding: 0;
-}
-
-section.details-con div div.tc div {
-  margin: 0;
-  padding: 0;
-}
-
-section.details-con div div.sc p {
-  margin: 0;
-  padding: 0;
-}
-
-section.details-con div div.sc span {
-  margin: 0;
-  padding: 0;
+section.details-con div.row div div p {
+  display: inline-block;
+  -webkit-padding-end: 5px !important;
+          padding-inline-end: 5px !important;
 }
 
 div.gf {
